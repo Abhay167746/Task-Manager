@@ -54,18 +54,18 @@ const App = () => {
           />
 
           <select
-            className="border rounded-lg px-3 py-2"
+            className="border rounded-lg px-3 py-2 cursor-pointer"
             value={priority}
             onChange={(e) => setPriority(e.target.value)}
           >
-            <option>Low</option>
+            <option className="cursor-pointer">Low</option>
             <option>Normal</option>
             <option>High</option>
           </select>
 
           <button
             onClick={addTask}
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition cursor-pointer"
           >
             Add
           </button>
